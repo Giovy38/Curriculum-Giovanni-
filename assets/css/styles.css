@@ -1058,7 +1058,7 @@ body.light-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 450px) {
   .nav__menu {
     padding: 1rem 1.5rem;
   }
@@ -1113,6 +1113,9 @@ body.light-theme {
     align-items: center;
     justify-content: center;
     column-gap: 1.5rem;
+  }
+  .contact {
+    height: 1200px;
   }
   .hobby__icon {
     font-size: 1.75rem;
@@ -1183,6 +1186,9 @@ body.light-theme {
     height: 300px;
     margin: 0 auto;
   }
+  .contact {
+    height: 1300px;
+  }
 }
 
 @media screen and (min-width: 767px) {
@@ -1194,6 +1200,9 @@ body.light-theme {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
     column-gap: 3rem;
+  }
+  .contact {
+    height: 1300px;
   }
 }
 
@@ -1296,6 +1305,9 @@ body.light-theme {
 
   .contact__container {
     column-gap: 6rem;
+  }
+  .contact {
+    height: 800px;
   }
 
   .footer__social-link {
