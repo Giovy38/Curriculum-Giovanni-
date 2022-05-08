@@ -1121,13 +1121,13 @@ body.light-theme {
     font-size: var(--small-font-size);
   }
   .contact__form-experience {
-    height: 150px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .experience__description {
-    display: none;
+  .contact{
+    height: 1200px;
   }
 }
 
@@ -1177,6 +1177,9 @@ body.light-theme {
   .contact__info {
     grid-template-columns: 300px;
     justify-content: center;
+  }
+  .contact{
+    height: 1200px;
   }
   .contact__form {
     width: 360px;
