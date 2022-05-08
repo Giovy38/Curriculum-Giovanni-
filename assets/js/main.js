@@ -76,29 +76,6 @@ let swiperEducation = new Swiper(".education__container", {
     },
 });
 
-// SWIPER WORK 
-
-let swiperwORK = new Swiper(".work__container", {
-    spaceBetween: 24,
-    loop:true,
-    grabCursor:true,
-
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-    breakpoints: {
-        576: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 2,
-          spaceBetween: 48,
-        },
-    },
-});
-
-
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
