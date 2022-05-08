@@ -1174,6 +1174,12 @@ body.light-theme {
     width: 295px;
   }
 
+  .contact__form-experience{
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   .contact__info {
     grid-template-columns: 300px;
     justify-content: center;
@@ -1193,6 +1199,9 @@ body.light-theme {
     grid-template-columns: repeat(2, max-content);
   }
 
+  .contact{
+    height: 700px;
+  }
   .contact__container {
     grid-template-columns: repeat(2, max-content);
     justify-content: center;
@@ -1297,6 +1306,9 @@ body.light-theme {
     padding: 1.5rem 2rem;
   }
 
+  .contact{
+    height: 800px;
+  }
   .contact__container {
     column-gap: 6rem;
   }
