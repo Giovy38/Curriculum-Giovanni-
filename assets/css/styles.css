@@ -284,6 +284,7 @@ body.light-theme {
   backdrop-filter: blur(10px);
   transition: 0.4s; /* for light mode animation */
   box-shadow: 4px 4px 16px hsla(0, 0%, 4%, 0.3);
+  
 }
 
 .nav__list {
@@ -966,29 +967,11 @@ body.light-theme {
   column-gap: 2rem;
 }
 
-/* .experience__description {
-  font-size: var(--smaller-font-size);
-} */
-
 .experience__title {
   font-size: var(--normal-font-size);
   margin-bottom: 0;
   padding-bottom: 0;
 }
-
-/* .experience__date {
-  font-size: 0.6rem;
-  margin-top: 0;
-  padding-top: 0;
-  margin-bottom: 0.5rem;
-  color: var(--first-color);
-} */
-
-/* .experience__icon {
-  font-size: 1.5rem;
-  color: var(--first-color);
-  margin-bottom: 0;
-} */
 
 .experience__img{
   width: 60px;
@@ -1068,10 +1051,10 @@ body.light-theme {
 
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px){
   .nav__menu {
     /* padding: 1rem 1.5rem; */
-    display: none;
+    visibility: hidden;
   }
 
   .home__buttons {
@@ -1150,7 +1133,7 @@ body.light-theme {
     left: 0;
     right: 0;
     margin: 0 auto; */
-    display: none;
+    visibility: hidden;
   }
 
   .about__info {
@@ -1217,7 +1200,7 @@ body.light-theme {
     left: 0;
     right: 0;
     margin: 0 auto;
-    display: flow-root;
+    visibility: visible;
   }
 
   .contact{
