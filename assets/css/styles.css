@@ -825,6 +825,8 @@ body.light-theme {
   display: block;
   margin-bottom: 0.75rem;
   color: var(--text-color-light);
+  text-decoration:inherit;
+  color: inherit;
 }
 
 .contact__button {
