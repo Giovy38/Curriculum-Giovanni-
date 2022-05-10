@@ -284,6 +284,7 @@ body.light-theme {
   backdrop-filter: blur(10px);
   transition: 0.4s; /* for light mode animation */
   box-shadow: 4px 4px 16px hsla(0, 0%, 4%, 0.3);
+  visibility: hidden;
   
 }
 
@@ -949,9 +950,9 @@ body.light-theme {
   transition: 0.4s;
 }
 
-/* ==========ESPERIENZE LAVORATIVE ============ */
+/* ========== CERTIFICATION ============ */
 
-.contact__form-experience {
+.contact__form-certifications {
   position: absolute;
   top: 0;
   left: 0;
@@ -970,18 +971,42 @@ body.light-theme {
   column-gap: 2rem;
 }
 
-.experience__title {
+
+.certification__content{
+  display: grid;
+  align-items: flex-start;
+  justify-content: left;
+}
+
+.certification__data{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+.certification__icon{
+  font-size: 1rem;
+  color: var(--first-color);
+  margin-right: .2rem;
+}
+
+.certification__link,
+.certification__link:active,
+.certification__link:visited{
+  color: var(--text-color-light);
+}
+  
+
+/* .experience__title {
   font-size: var(--normal-font-size);
   margin-bottom: 0;
   padding-bottom: 0;
-}
+} */
 
-.experience__img{
-  width: 60px;
-  height: 60px;
-  border-radius: .5rem;
-  justify-self: auto;
-}
+
+
 
 
 /*=============== FOOTER ===============*/
@@ -1055,10 +1080,9 @@ body.light-theme {
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 480px){
-  .nav__menu {
-    /* padding: 1rem 1.5rem; */
+  /* .nav__menu {
     visibility: hidden;
-  }
+  } */
 
   .home__buttons {
     flex-direction: column;
@@ -1114,10 +1138,10 @@ body.light-theme {
   .hobby__icon {
     font-size: 1.75rem;
   }
-  .experience__title {
+  /* .experience__title {
     font-size: var(--small-font-size);
-  }
-  .contact__form-experience {
+  } */
+  .contact__form-certifications {
     height: 250px;
     display: flex;
     align-items: center;
@@ -1129,15 +1153,12 @@ body.light-theme {
   
 }
 
+
 /* For medium devices */
 @media screen and (min-width: 576px) {
-  .nav__menu {
-    /* width: 328px;
-    left: 0;
-    right: 0;
-    margin: 0 auto; */
+  /* .nav__menu {
     visibility: hidden;
-  }
+  } */
 
   .about__info {
     grid-template-columns: repeat(4, 140px);
@@ -1173,7 +1194,7 @@ body.light-theme {
     width: 295px;
   }
 
-  .contact__form-experience{
+  .contact__form-certifications{
     height: 250px;
     display: flex;
     align-items: center;
@@ -1193,7 +1214,7 @@ body.light-theme {
   }
 }
 
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 767px){
   .work__container {
     grid-template-columns: repeat(2, max-content);
   }
@@ -1232,6 +1253,10 @@ body.light-theme {
 
   .nav {
     height: calc(var(--header-height) + 1rem);
+  }
+
+  .nav__menu{
+    visibility: visible;
   }
 
   .home__handle {
