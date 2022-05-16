@@ -830,6 +830,13 @@ body.light-theme {
   color: inherit;
 }
 
+/* Numero Whatsapp non colorato per IOS */
+.contact__card-data,
+.contact__card-data:active,
+.contact__card-data:visited{
+  color: var(--text-color-light);
+}
+
 .contact__button {
   color: var(--first-color);
   font-size: var(--small-font-size);
